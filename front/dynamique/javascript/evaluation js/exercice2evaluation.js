@@ -1,2 +1,1 @@
 let n;
-let x;
