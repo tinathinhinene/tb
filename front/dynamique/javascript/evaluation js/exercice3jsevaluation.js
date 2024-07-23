@@ -1,13 +1,12 @@
-     let prenom = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
-{
+let tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
 
- 
-    let x=prompt("veuillez choisir un prénom");
-    if(x==="audrey"||"aurelien"||"flavien"||"jeremy"||"laurent"||"melik"||"nouara"||"salem"||"samuel"||"stephane"){
-       MyArray.pop(prenom);
-        prenom.push();
-        
-    }
-        console.log(prenom);
-}
+    let x = prompt("veuillez choisir un prénom");
+    for (i = 0; i < tab.length; i++)
+        if (x == tab[i]) {
+
+            tab.splice(i, 1);
+            tab.push("");
+
+        }
+    console.log(tab);
 
